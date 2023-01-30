@@ -10,7 +10,7 @@ if [[ "${current_release}" == "${latest_release_num_only}" ]]; then
     exit 0
 fi
 # Get release
-curl -L https://github.com/be5invis/Iosevka/releases/download/${latest_release}/webfont-iosevka-${latest_release_num_only}.zip > ${latest_release_num_only}.zip
+curl -L https://github.com/be5invis/Iosevka/releases/download/${latest_release}/webfont-iosevka-term-slab-${latest_release_num_only}.zip > ${latest_release_num_only}.zip
 rm -rf latest/
 unzip ${latest_release_num_only}.zip -d latest
 # Clean up
